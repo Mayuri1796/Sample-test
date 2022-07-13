@@ -1,0 +1,92 @@
+@import "../scss/variables";
+
+.main_header {
+  @include position(absolute);
+  z-index: 1;
+  //   left: 20%;
+
+  //   .navbar-brand {
+  //     margin-right: 170px;
+  //   }
+  .navbar-toggler-icon {
+    color: $text-color;
+  }
+
+  a {
+    color: $text-color;
+  }
+  .nav-link {
+    color: $text-color;
+  }
+}
+
+.banner {
+  @include bgimg;
+  background: url("../images/banner-img.jpg");
+  padding: 100px 0px 350px;
+  @include position(relative);
+
+  & button {
+    @include mybtn;
+
+    // &:hover {
+    //   @include hovereffects;
+    // }
+  }
+}
+
+.list {
+  padding: 50px 0px;
+
+  h3 {
+    color: $primary-color;
+    font-weight: 700;
+  }
+  p {
+    margin: 20px 0px;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  li {
+    list-style: none;
+  }
+  i {
+    color: $list-color;
+  }
+  button {
+    @include mybtn;
+  }
+
+  .mac {
+    @include position(relative);
+    left: 15%;
+
+    img {
+      @include position(absolute);
+      left: 70%;
+      top: 0%;
+      width: 70%;
+    }
+  }
+}
+
+.flex-container {
+  @include flexboxdiv;
+}
+
+@media only screen and(max-width: 768px) {
+  .main_header {
+    left: 2%;
+  }
+
+  .list .mac {
+    left: 0%;
+
+    img {
+      @include position(static);
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

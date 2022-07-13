@@ -1,0 +1,100 @@
+.main_header {
+  position: absolute;
+  z-index: 1;
+}
+.main_header .navbar-toggler-icon {
+  color: white;
+}
+.main_header a {
+  color: white;
+}
+.main_header .nav-link {
+  color: white;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: url("../images/banner-img.jpg");
+  padding: 100px 0px 350px;
+  position: relative;
+}
+.banner button {
+  padding: 5px 20px;
+  background: #25365d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+
+.list {
+  padding: 50px 0px;
+}
+.list h3 {
+  color: #25365d;
+  font-weight: 700;
+}
+.list p {
+  margin: 20px 0px;
+}
+.list ul {
+  padding-left: 0px;
+}
+.list li {
+  list-style: none;
+}
+.list i {
+  color: #ff2868;
+}
+.list button {
+  padding: 5px 20px;
+  background: #25365d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.list .mac {
+  position: relative;
+  left: 15%;
+}
+.list .mac img {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+  width: 70%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_header {
+    left: 2%;
+  }
+  .list .mac {
+    left: 0%;
+  }
+  .list .mac img {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
